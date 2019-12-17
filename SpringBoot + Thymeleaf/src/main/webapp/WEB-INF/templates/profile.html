@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Profile</title>
+</head>
+<body>
+<div\>
+<h1>Your Login : <p th:text="${#authentication.name}"></p></h1>
+</div>
+<br>
+<form action="/logout">
+    <input type="submit" value="Logout">
+</form>
+</body>
+</html>

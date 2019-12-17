@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+<ul>
+    <li th:text="${user.id}"></li>
+    <li th:text="${user.username}"></li>
+    <br/>
+    <hr/>
+
+    <form action="/update" method="post">
+        <li> New Username: <input type="text" name="username"> </li>
+        <input type="number" hidden name="id" th:value="${user.id}"/>
+        <input type="submit" value="Update">
+    </form>
+
+
+</ul>
+</body>
+</html>
